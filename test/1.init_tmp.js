@@ -5,9 +5,9 @@ var should = require('chai').should(),
 
 describe('init_tmp', function(){
   before(function(done){
-    rimraf('./.tmp', function(err) {
+    rimraf('/tmp/fetch_upload_s3', function(err) {
       if (err) {
-        console.log('an error occured while removing ./.tmp: '+err);
+        console.log('an error occured while removing /tmp/fetch_upload_s3: '+err);
       }
       done(err);
     });
@@ -18,8 +18,8 @@ describe('init_tmp', function(){
   });
 
   describe('first run', function(){
-    it('should have created ./.tmp/fetch_upload_s3', function(done){
-      fs.exists('./.tmp/fetch_upload_s3', function(exists){
+    it('should have created /tmp/fetch_upload_s3', function(done){
+      fs.exists('/tmp/fetch_upload_s3', function(exists){
         exists.should.be.true;
         done();
       });
@@ -28,7 +28,7 @@ describe('init_tmp', function(){
 
   describe('second run', function(){
     it('it should not timeout', function(done){
-      fs.exists('./.tmp/fetch_upload_s3', function(exists){
+      fs.exists('/tmp/fetch_upload_s3', function(exists){
         exists.should.be.true;
         done();
       });

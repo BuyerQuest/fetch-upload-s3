@@ -47,5 +47,5 @@ fus3.init(function(){
 ```
 
 
-A temp folder './.tmp/fetch_upload_s3' is used as a proxy.
+A temp folder '/tmp/fetch_upload_s3' is used as a proxy.
 Temporary and source files are deleted locally as soon as they have been uploaded to S3

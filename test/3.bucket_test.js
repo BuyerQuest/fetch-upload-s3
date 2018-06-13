@@ -36,7 +36,7 @@ describe('writing to S3', function(){
 
     describe('uploading to the bucket', function(done){
       before(function(done){
-        this.s3_bucket.upload('./.tmp/fetch_upload_s3/npm_logo.png', this.s3_key, done);
+        this.s3_bucket.upload('/tmp/fetch_upload_s3/npm_logo.png', this.s3_key, done);
       });
 
       it('should use an existing bucket', function(done){
@@ -93,5 +93,3 @@ describe('writing to S3', function(){
     });
   });
 });
-
-
