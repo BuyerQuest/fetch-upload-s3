@@ -24,8 +24,8 @@
   "dependencies": {
     "async": "~0.2.9",
     "aws-sdk": "~1.9.0",
-    "is-lambda": "^1.0.1",
-    "request": "~2.27.0"
+    "got": "^8.3.1",
+    "is-lambda": "^1.0.1"
   },
   "devDependencies": {
     "chai": "~1.8.1",
