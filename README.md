@@ -31,7 +31,7 @@ Create app environment variables and set
 
 ```javascript
 // To fetch the file at URL: http://nodejs.org/images/logo.png
-// And then a file and upload it to S3 at the path: s3://my-s3-bucket/path/inside/bucket/file.ext
+// And then upload it to S3 at the path: s3://my-s3-bucket/path/inside/bucket/file.ext
 var FUS3 = require('fetch-upload-s3');
 var fus3 = new FUS3('my-s3-bucket');
 
