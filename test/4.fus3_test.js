@@ -13,7 +13,7 @@ describe('fetch and upload to S3', function() {
 
   describe('init', function() {
     it('should have created .tmp/fetch_upload_s3', function(done){
-      fs.exists('./.tmp/fetch_upload_s3', function(exists){
+      fs.exists('/tmp/fetch_upload_s3', function(exists){
         exists.should.be.true;
         done();
       });
@@ -41,7 +41,7 @@ describe('fetch and upload to S3', function() {
     });
 
     it('should not keep the local copy', function(done){
-      fs.exists('./.tmp/fetch_upload_s3/'+this.s3_key, function(exists){
+      fs.exists('/tmp/fetch_upload_s3/'+this.s3_key, function(exists){
         exists.should.be.false;
         done();
       });

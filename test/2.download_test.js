@@ -13,7 +13,7 @@ describe('download', function(){
       });
 
       it('should NOT have created the file', function(done) {
-          fs.exists('./.tmp/fetch_upload_s3/404.png', function(exists){
+          fs.exists('/tmp/fetch_upload_s3/404.png', function(exists){
               exists.should.be.false;
               done()
           });
@@ -28,7 +28,7 @@ describe('download', function(){
       });
 
       it('should have created the file', function(done) {
-          fs.exists('./.tmp/fetch_upload_s3/google.png', function(exists){
+          fs.exists('/tmp/fetch_upload_s3/google.png', function(exists){
               exists.should.be.true;
               done()
           });
