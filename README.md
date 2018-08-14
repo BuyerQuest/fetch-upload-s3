@@ -42,7 +42,6 @@ fus3.init(function() {
     console.log(err);
   });
 });
-};
 ```
 
 ```javascript
